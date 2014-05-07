@@ -70,7 +70,7 @@ module Logit
 	end
 
 	def logger
-		@logger ||= Logging.logger_for(self.class.name)
+		@logger ||= Logit.logger_for(self.name)
 	end
 
 	# Use a hash class-ivar to cache a unique Logger per class:
@@ -89,7 +89,4 @@ module Logit
 		end
 	end
 end
-
-
-
 
