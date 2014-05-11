@@ -1,6 +1,10 @@
 # Logit
 
-TODO: Write a gem description
+Logit is purposed to be a simple extension to the usual logging tool in ruby.
+Mainly, the two goals are:
+
+1. Easy to use
+2. Colorful
 
 ## Installation
 
@@ -18,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'logit'
+
+module YourModuleOrClass
+	extend Logit
+
+	def some_method
+		logger.debug "The sky is falling!"
+	end
+end
+```
 
 ## Contributing
 
